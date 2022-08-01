@@ -12,10 +12,17 @@ const resources = {
     },
 };
 
+const validLocalStorage = () => {
+    if (typeof window !== 'undefined') {
+        return localStorage.getItem('language')
+  } else {
+    return '"pt"'
+  }
+}
 i18n
 .use(initReactI18next)
 .init({resources,
-     lng: JSON.parse(localStorage.getItem('language') as string),
+     lng: JSON.parse( validLocalStorage() as string),
      fallbackLng:'pt'})
 
 export default i18n;

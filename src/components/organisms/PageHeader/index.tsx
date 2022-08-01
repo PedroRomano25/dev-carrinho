@@ -16,6 +16,7 @@ import { useLocalStorage } from "../../../utils/useLocalStorage";
 import { useTranslation } from "react-i18next";
 import flagBrazil from '../../../../public/Brazilian_Flag.svg'
 import flagUSA from '../../../../public/usa_round.svg'
+import { validLocalStorage } from "../../../utils/validStorage";
 
 const PageHeader = componentFactory<IPageHeaderProps>(
   "PageHeader",
@@ -51,12 +52,12 @@ const PageHeader = componentFactory<IPageHeaderProps>(
         <Header ref={ref}>
           <NavOptions links={links} />
           <section className={styles.menu}>
-            {localStorage.getItem("language") === '"en"' && (
+            {validLocalStorage() === '"en"' && (
               <span className={styles.cart} onClick={() => changeLanguage()}>
                 <Image src={flagBrazil} alt="CartShop" width={72} height={32} />
               </span>
             )}
-            {localStorage.getItem("language") === '"pt"' && (
+            {validLocalStorage() === '"pt"' && (
               <span className={styles.cart} onClick={() => changeLanguage()}>
                 <Image src={flagUSA} alt="CartShop" width={72} height={32} />
               </span>
