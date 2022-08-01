@@ -1,0 +1,37 @@
+@import "/src/styles/tokens.scss";
+
+.containerCardCart {
+  display: flex;
+  justify-content: flex-start;  
+  margin-top: 1rem;
+
+  .containerText{
+    padding: 1rem;
+    margin-left: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    h3{
+      font-weight: 800;
+    }
+    del{
+      color: $grey-3;
+      span{
+        font-weight: 500;
+        font-size: 0.8rem;
+        color: $grey-3;
+      }
+    }
+    
+  }
+
+  .imageCart{
+    border: solid 2px $grey-1;
+    width: 10rem;
+    height: 10rem;
+    .img{
+      width: 100%;
+      height: auto;
+    }
+
+  }
+}

@@ -1,0 +1,8 @@
+@import "/src/styles/tokens.scss";
+
+.line {
+  border-bottom: 1px solid $grey-1;
+  margin: 1rem 0;
+  width: calc(100% + 20px);
+  margin-left: -10px;
+}

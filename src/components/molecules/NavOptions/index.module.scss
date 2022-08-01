@@ -1,0 +1,19 @@
+@import "/src/styles/tokens.scss";
+
+.navContainer{
+  ul{
+    display: flex;
+    gap:0.5rem;
+    list-style-type: none;
+    .options{
+       padding: 5px;      
+       text-decoration: none;   
+       cursor:pointer;  
+     }
+    .options.active{
+        background-color: $finish;
+        color:$pure-white;
+        border-radius: 0.5rem;
+      }
+  }  
+}

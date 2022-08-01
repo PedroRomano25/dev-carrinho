@@ -1,0 +1,9 @@
+@import "/src/styles/tokens.scss";
+
+.containerFreeShipping{
+  color: $free-ship-2;  
+  background: $free-ship;
+  padding: 0.5rem 1rem;
+  border-radius: 3rem;  
+  text-align: center;
+}
