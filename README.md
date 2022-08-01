@@ -27,7 +27,7 @@ Projeto criado para treinar habilidades como localStorage, uso de hooks, consumo
 
 ## Como Executar o Projeto
 
-- git clone [https://github.com/PedroRomano25/dev-beber.git](https://github.com/PedroRomano25/dev-carrinho.git)
+- git clone [https://github.com/PedroRomano25/dev-carrinho.git](https://github.com/PedroRomano25/dev-carrinho)
 - cd dev-beber
 - npm i 
 - npm run dev
