@@ -26,6 +26,7 @@ declare global {
     children?: React.ReactNode;
     isShow: boolean;
     onClose:() => void;
+    title:string;
   }
 
   interface ICardCart {
@@ -34,6 +35,17 @@ declare global {
     image:string;
     title: string;
   }
+
+  interface ILinkProps {
+    label: string,
+    path: string
+  }
+
+  interface INavOptionsProps {
+    links: ILinkProps[],
+  }
+
+  
 
   interface IApiData {
     items: IItemsApi[],

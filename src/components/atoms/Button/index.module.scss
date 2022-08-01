@@ -1,7 +1,7 @@
 @import "/src/styles/tokens.scss";
 
 .button{
-  padding: 5px 15px;
+  padding: 0.7rem 1rem;
   cursor: pointer;
   border-radius: 0.5rem;
   text-decoration: none;
@@ -15,7 +15,7 @@
   span{
     display: flex;
     align-items: center;
-    font-size: 1.5rem;
+    font-size: 1rem;
     font-weight: 700;
     color:$pure-white;
   }

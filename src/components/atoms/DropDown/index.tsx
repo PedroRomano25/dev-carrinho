@@ -6,7 +6,7 @@ import cross from "../../../../public/cross-15.svg";
 import LineDropDown from "../LineDropDown";
 
 const DropDown = componentFactory<IDropDownProps>("DropDown", (props, ref) => {
-  const { children, isShow = false, onClose } = props;
+  const { children, isShow = false, onClose, title } = props;
   return (
     <div
       ref={ref}
@@ -14,7 +14,7 @@ const DropDown = componentFactory<IDropDownProps>("DropDown", (props, ref) => {
     >
       <div className={styles.content}>
         <div className={styles.exit}>
-          <h3>Meu Carrinho</h3>
+          <h3>{title}</h3>
           <span className={styles.image}>
             <Image
               src={cross}

@@ -10,7 +10,7 @@ const MenoresPrecos: NextPage = () => {
   const dados = useGetData()
   
   React.useEffect( () => {    
-    dados.Menores().then((i:IApiData) => {  
+    dados.Maiores().then((i:IApiData) => {  
       setTotal(i.value)
       const newData = i.items.map((i:IItemsApi) => ({
         oldPrice: i.price,

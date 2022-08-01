@@ -3,21 +3,10 @@ import * as React from "react";
 import componentFactory from "../../../utils/componentFactory";
 import styles from "./index.module.scss";
 
-const NavOptions = componentFactory(
+const NavOptions = componentFactory<INavOptionsProps>(
   "NavOptions",
   (props, ref) => {
-
-    const links = [
-      {          
-          label: 'Acima de R$ 10,00',
-          path: '/AcimaDe10',
-      },
-      {        
-          label: 'Abaixo de R$ 10,00',
-          path: '/AbaixoDe10',
-      },
-  ];
-
+  const {links} = props
   const router = useRouter();
   const { route , push} = router;
 

@@ -6,11 +6,10 @@ import { useGetData } from '../../service/getData';
 const MaioresPrecos: NextPage = () => {
   const [data,setData] = React.useState<ICardCart[]>([])
   const [total,setTotal] = React.useState<number>(0)
-
   const dados = useGetData()
   
   React.useEffect( () => {    
-    dados.Maiores().then((i:IApiData) => {  
+    dados.Menores().then((i:IApiData) => {  
       setTotal(i.value)
       const newData = i.items.map((i:IItemsApi) => ({
         oldPrice: i.price,
