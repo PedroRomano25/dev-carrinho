@@ -9,3 +9,9 @@
   padding: 10px 5vw;  
   background-color: $pure-white;
 }
+
+@media screen and (max-width: 800px) {
+  .Header{
+    padding: 10px 0.1vw; 
+  }
+}

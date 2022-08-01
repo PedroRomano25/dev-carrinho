@@ -54,19 +54,19 @@ const PageHeader = componentFactory<IPageHeaderProps>(
           <section className={styles.menu}>
             {validLocalStorage() === '"en"' && (
               <span className={styles.cart} onClick={() => changeLanguage()}>
-                <Image src={flagBrazil} alt="CartShop" width={72} height={32} />
+                <Image src={flagBrazil} alt="CartShop" width={45} height={32} />
               </span>
             )}
             {validLocalStorage() === '"pt"' && (
               <span className={styles.cart} onClick={() => changeLanguage()}>
-                <Image src={flagUSA} alt="CartShop" width={72} height={32} />
+                <Image src={flagUSA} alt="CartShop" width={45} height={32} />
               </span>
             )}
             <span
               className={styles.cart}
               onClick={() => toggleMenu((oldState) => !oldState)}
             >
-              <Image src={cartShop} alt="CartShop" width={72} height={32} />
+              <Image src={cartShop} alt="CartShop" width={45} height={32} />
             </span>
             <DropDown
               isShow={showMenu}
