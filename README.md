@@ -1,6 +1,4 @@
-# Dev-Beber
-
-[https://dev-beber.vercel.app/](https://dev-carrinho.vercel.app/)
+# Dev-Carrinho
 
 Dev-Carrinho é uma aplicação front-end contruída com Next JS.
 
